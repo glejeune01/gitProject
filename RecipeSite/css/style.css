@@ -1,41 +1,187 @@
-body {
-background-color: hotpink;
+/*Styling for home page*/
 
+body,
+html {
+    background-color: rgb(255, 158, 158);
+    height: 100%;
+    box-sizing: border-box;
 }
 
 /*Media Queries from Bootstrap guide*/
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-    .container {
-        background-color: pink;
+/*Small devices (landscape phones, 450px and up)*/
+@media (min-width: 450px) {
+    .pageWrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    .header {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-nav {
+        font-size: x-large;
+        font-weight: bold;
+        gap: 5%;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .nav-item {
+        border-bottom: .15em solid white;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-shadow: 0px 3px 5px #444242;
+        background-color: rgb(179, 48, 70);
+    }
+    .recipeMain {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 158, 158);
+        align-items: center;
+        gap: 2vh;
+        margin-bottom: 5%;
+    }
+
+    .recipeContainer {
+        background-color: rgb(255, 255, 104);
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 2%;
+        box-shadow: 0px 3px 5px #444242;
+        padding: .5%;
+    }
+
+    img {
+        box-sizing: border-box;
+        max-width: 85%;
+        box-shadow: 0px 3px 5px #444242;
+    }
+
+    .recipeTitle {
+        font-size: x-large;
+        font-weight: bold;
+        color: black;
+        align-self: flex-start;
+        background-color: blanchedalmond;
+        border: 2px solid salmon;
+        box-shadow: 0px 3px 5px #444242;
+        padding-right: 10%;
+        margin-bottom: auto;
+    }
+
+    .recipeDescription {
+        box-sizing: border-box;
+        font-size: medium;
+        color: white;
+        max-width: 85%;
+        background-color: rgb(57, 57, 99);
+        border: 2px solid salmon;
+        box-shadow: 0px 3px 5px #444242;
+        margin-bottom: auto;
+        padding: .5%;
+        min-width: 90%;
+        
+    }
+
+    .footerWrapper {
+        display: flex;
+        background-color: red;
+        color: White;
+        width: 100%;
+        text-align: center;
+        align-self: flex-end;
+        justify-self: flex-end;
+        justify-content: space-between;
+        padding:1%;
+        font-size: larger;
+        font-weight: bold;
     }
 }
+
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    .container {
-        background-color: green;
+    .navbarHomepage {
+        justify-content: center;
+        height: 100%;
+    }
+
+    .recipeMain {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2vh;
+        max-width: 100%;
+        margin-bottom: 15%;
+        justify-content: center;
+    }
+
+    .recipeContainer {
+        max-width: 45%;
+        min-height: 35%
     }
 }
+
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    .container {
-        background-color: yellow;
+    .navbarHomepage {
+        height: 100%;
     }
-}
 
-/* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-    .container {
-        background-color: purple;
+    .recipeMain {
+        box-sizing: border-box;
+        align-content: flex-start;
+        justify-content: flex-end;
+        max-width: 85%;
+        gap: 3%;
+        margin-top: 2%;
     }
-}
 
-/*XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
-    .container {
-        background-color: blue;
+    .recipeContainer {
+        box-sizing: border-box;
+        width: 30%;
+        min-height: 55%
+    }
+
+    .pageWrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footerWrapper {
+        flex-direction: row;
+        box-sizing: border-box;
+
+    }
+
+    .navbar {
+        display: flex;
+        align-content: flex-start;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 2vh;
+        text-align: center;
+        justify-content: start;
+        align-content: center;
+    }
+
+    .nav-item {
+        padding: 5%;
     }
 }
+/*Styling for home page over*/

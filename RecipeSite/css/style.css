@@ -151,6 +151,8 @@ html {
     .recipeDescription {
         background-color: #E9B872;
         color: #151515;
+        line-height: 140%;
+        font-size: large;
     }
 
     .recipeContainer {
@@ -220,6 +222,8 @@ html {
     .recipeDescription {
         background-color: #1A281F;
         color: #f8f8f8;
+        line-height: 150%;
+        font-size: larger;
     }
 
     .pageWrapper {

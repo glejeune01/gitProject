@@ -2,7 +2,6 @@
 
 body,
 html {
-    background-color: rgb(255, 158, 158);
     height: 100%;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -341,7 +340,8 @@ html {
     }
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/* Medium devices (tablets, 768px and up)
+   Adjusting the typography and color of the containers and text*/
 @media (min-width: 768px) {
     .recipeItemContainer {
         height: 100%;
@@ -361,8 +361,48 @@ html {
             ". ."
             "recipeIngredients recipeInstructions"
             "recipeFooter recipeFooter";
-        background: rgb(255, 146, 146);
-        background: linear-gradient(49deg, rgba(255, 146, 146, 1) 0%, rgba(255, 182, 193, 1) 65%);
+        background: #E6EBE0;
+        background: linear-gradient(49deg, #E6EBE0 0%, #e1e9d7 65%);
+    }
+
+    .recipeHeader {
+        background-color: #ED6A5A;
+        color: #F4F1BB;
+    }
+
+    .recipeName {
+        background-color: #ED6A5A;
+        color: #F4F1BB;
+        font-size: xx-large;
+    }
+
+    .recipeIngredients {
+        background-color: #ED6A5A;
+        border: none;
+    }
+    .recipeInstructions{
+        background-color: #ED6A5A;
+        border: none;
+    }
+    .recipeLists {
+        background-color: #ED6A5A;
+    }
+    .recipeFooter {
+        font-size: larger;
+    }
+
+    .recipeNavBarItem:hover {
+        background-color: #ED6A5A;
+        color: antiquewhite;
+        transform: scale(1.2);
+        border: #5FBB97 solid 2px;
+    }
+
+    .recipeNavBarItemLeft:hover {
+        background-color: #ED6A5A;
+        color: antiquewhite;
+        transform: scale(1.1);
+        border: #5FBB97 solid 2px;
     }
 
 }
@@ -382,39 +422,55 @@ html {
             "recipeNavBar recipeImage recipeIngredients"
             "recipeNavBar recipeInstructions recipeInstructions"
             "recipeFooter recipeFooter recipeFooter";
-        background: rgb(255, 146, 146);
-        background: linear-gradient(49deg, rgba(255, 146, 146, 1) 0%, rgba(255, 182, 193, 1) 65%);
+        background-color: #5FBB97;
+        background: linear-gradient(49deg, rgb(212, 240, 199) 0%, rgb(106, 214, 205) 65%);
     }
-
+    .recipeHeader {
+        background-color: #63326E;
+        box-shadow: 0px 3px 5px #444242;
+    }
+    .recipeName {
+        background-color: #63326E;
+        box-shadow: 0px 3px 5px #444242;
+        font-size: xx-large;
+    }
     .recipeNavBar {
         box-sizing: border-box;
         grid-area: recipeNavBar;
         display: grid;
         grid-template-columns: 1fr;
         align-self: stretch;
-        font-size: large;
-        font-size: x-large;
-        justify-items: start;
-        background-color: #626188;
+        font-size: xx-large;
+        background-color: #63326E;
         color: aliceblue;
+        transform: scale(.9);
+        box-shadow: 0px 3px 5px #444242;
+        
     }
 
     .recipeNavBarItem {
         border: none;
+        background-color: #8DDCA4;
+        color: #291711;
     }
 
     .recipeNavBarItemLeft {
         border: none;
+        background-color: #8DDCA4;
+        color: #291711;
+        
     }
 
     .recipeNavBarItem:hover {
         background-color: #18173a;
         color: antiquewhite;
+        transform: scale(1.2);
     }
 
     .recipeNavBarItemLeft:hover {
         background-color: #18173a;
         color: antiquewhite;
+        transform: scale(1.1);
     }
 
     .recipeImage {
@@ -428,6 +484,9 @@ html {
         align-self: stretch;
         margin-top: 10%;
         justify-self: stretch;
+        background-color: #63326E;
+        box-shadow: 0px 3px 5px #444242;
+        font-size: xx-large;
 
 
     }
@@ -436,6 +495,10 @@ html {
         align-self: stretch;
         padding-top: auto;
         justify-self: stretch;
+        background-color: #63326E;
+        box-shadow: 0px 3px 5px #444242;
+        font-size: xx-large;
+        border: none;
     }
 
     .recipeLists {
@@ -444,9 +507,22 @@ html {
         font-size: medium;
         text-transform: none;
         color: white;
-        background-color: #626188;
+        background-color: #63326E;
         letter-spacing: 0;
         margin-top: 5%;
         font-size: x-large;
+    }
+
+    .recipeFooter {
+        font-size: xx-large;
+    }
+
+    .prepTime {
+        font-size: xx-large;
+       
+    }
+
+    .numOfServings {
+       font-size: xx-large;
     }
 }

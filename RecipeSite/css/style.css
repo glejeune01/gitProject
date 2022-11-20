@@ -393,6 +393,9 @@ html {
     .recipeFooter {
         font-size: larger;
     }
+    .recipeNavBar {
+        font-size: x-large;
+    }
 
     .recipeNavBarItem:hover {
         background-color: #ED6A5A;

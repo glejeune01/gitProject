@@ -5,6 +5,7 @@ html {
     height: 100%;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-color: #7A5C61;
 }
 
 /*Media Queries from Bootstrap guide*/
@@ -16,10 +17,11 @@ html {
         flex-direction: column;
         flex-wrap: nowrap;
         height: 100%;
+        background-color: #7A5C61;
     }
 
     .header {
-        background-color: black;
+        background-color: #392759;
         color: white;
         display: flex;
         justify-content: center;
@@ -37,40 +39,40 @@ html {
     }
 
     .nav-item {
-        border-bottom: .15em solid white;
         padding-left: 5%;
         padding-right: 5%;
         box-shadow: 0px 3px 5px #444242;
-        background-color: rgb(179, 48, 70);
+        background-color: #392759;
+        width: 180%;
     }
 
     .recipeMain {
         display: flex;
         flex-direction: column;
-        background-color: rgb(255, 158, 158);
         align-items: center;
-        gap: 2vh;
         margin-bottom: 5%;
     }
 
     .recipeContainer {
-        background-color: rgb(255, 255, 104);
+        background-color: #E8F0FF;
         display: flex;
         flex-direction: column;
-        gap: 1vh;
+        gap: 2vh;
         width: 80%;
         text-align: center;
         align-items: center;
         border: 1px solid black;
         border-radius: 2%;
         box-shadow: 0px 3px 5px #444242;
-        padding: .5%;
+        margin-top: 5%;
     }
 
     img {
         box-sizing: border-box;
         max-width: 85%;
         box-shadow: 0px 3px 5px #444242;
+        margin-top: 2%;
+        border-radius: .5em;
     }
 
     .recipeTitle {
@@ -82,17 +84,19 @@ html {
         box-shadow: 0px 3px 5px #444242;
         margin-bottom: auto;
         padding: 0;
+        margin-top: 10%;
+        margin-bottom: 5%;
     }
 
     .recipeDescription {
         box-sizing: border-box;
         font-size: medium;
-        color: white;
+        color: #392759;
         max-width: 85%;
-        background-color: rgb(57, 57, 99);
+        background-color: #fcc7e0;
         border: 2px solid salmon;
         box-shadow: 0px 3px 5px #444242;
-        margin-bottom: auto;
+        margin-bottom: 2%;
         padding: .5%;
         min-width: 90%;
 
@@ -100,7 +104,7 @@ html {
 
     .footerWrapper {
         display: flex;
-        background-color: red;
+        background-color: #392759;
         color: White;
         width: 100%;
         text-align: center;
@@ -110,15 +114,28 @@ html {
         padding: 1%;
         font-size: larger;
         font-weight: bold;
+        margin-top: 10%;
+    }
+    .navbar {
+        background-color: #E8F0FF !important;
+        padding-top: 10%;
     }
 }
 
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+   html {
+    background-color: #A63D40;
+   }
     .navbarHomepage {
         justify-content: center;
         height: 100%;
+    }
+
+    .header {
+        background-color: #A63D40;
+        border-bottom: #151515 solid 10px;
     }
 
     .recipeMain {
@@ -128,17 +145,55 @@ html {
         max-width: 100%;
         margin-bottom: 15%;
         justify-content: center;
+        background-color: #A63D40;
+    }
+
+    .recipeDescription {
+        background-color: #E9B872;
+        color: #151515;
     }
 
     .recipeContainer {
         max-width: 45%;
-        min-height: 35%
+        min-height: 35%;
+        background-color: #6494AA;
+        margin-left: 2%;
     }
+
+    .navbar {
+        background-color: #90A959 !important;
+        padding-top: 10%;
+    }
+
+    .footerWrapper {
+       background-color: #90A959;
+    }
+
+    .nav-link, .nav-item {
+        
+        background-color:#151515;
+        opacity: .95;
+        border-radius: .5em;
+        
+    }
+
 }
 
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+    html {
+        background-color:#CE7B91;
+    }
+
+    .header {
+        background-color:#1A281F;
+    }
+
+    .footerWrapper {
+        background-color:#1A281F;
+    }
+
     .navbarHomepage {
         height: 100%;
     }
@@ -150,17 +205,27 @@ html {
         max-width: 85%;
         gap: 3%;
         margin-top: 2%;
+        background-color: #CE7B91;
+        
     }
 
     .recipeContainer {
         box-sizing: border-box;
         width: 30%;
-        min-height: 55%
+        min-height: 55%;
+        background-color: #C0E8F9;
+        margin-left: 2%;
+    }
+
+    .recipeDescription {
+        background-color: #1A281F;
+        color: #f8f8f8;
     }
 
     .pageWrapper {
         flex-direction: row;
         flex-wrap: wrap;
+        background-color: #CE7B91;
     }
 
     .footerWrapper {
@@ -171,6 +236,9 @@ html {
     .navbar {
         display: flex;
         align-content: flex-start;
+        transform: scale(1.1);
+        margin-top: 10%;
+        background-color: #635255 !important;
     }
 
     .navbar-nav {
@@ -181,8 +249,9 @@ html {
         align-content: center;
     }
 
-    .nav-item {
+    .nav-item, .nav-link {
         padding: 5%;
+        background-color: whitesmoke;
     }
 }
 
